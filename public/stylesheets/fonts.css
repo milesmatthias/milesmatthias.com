@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'PicoBlackAlRegular';
+    src: url('../fonts/picobla_-webfont.eot');
+    src: url('../fonts/picobla_-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/picobla_-webfont.woff') format('woff'),
+         url('../fonts/picobla_-webfont.ttf') format('truetype'),
+         url('../fonts/picobla_-webfont.svg#PicoBlackAlRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face{
+	font-family: 'BookmanOldStyleBold';
+	src: url('../fonts/bookosb.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}

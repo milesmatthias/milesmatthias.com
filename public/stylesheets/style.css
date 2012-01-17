@@ -14,3 +14,27 @@ strong.below{
 div.wrapper{
     background-color:white;
 }
+
+ul.socialnetworks{
+	list-style-type: none;
+	float:right;
+}
+
+ul.socialnetworks li{
+	display: inline;
+	padding: 10px;
+	font-size: 2.5em;
+	color: yellow;
+}
+
+ul.socialnetworks li.twitter{
+	font-family: 'PicoBlackAlRegular', sans-serif;
+}
+
+ul.socialnetworks li.github{
+	font-family: 'Palatino', Georgia, 'Times New Roman', serif;
+}
+
+ul.socialnetworks li.tumblr{
+	font-family: 'BookmanOldStyleBold', sans-serif;
+}
