@@ -1,46 +1,49 @@
 .wrapper
-  .topbar
-    .fill
+  .navbar.navbar-fixed-top
+    .navbar-inner
       .container
         a.brand(href='#') Miles Matthias
-        ul.socialnetworks
-          li.twitter t
-          li.github g
-          li.tumblr t
+        .nav-collapse
+          ul.nav
+            li
+              a(href='#') Home
+            li 
+              a(href='#contact') Contact
 
   .container
-    //
-       Main hero unit for a primary marketing message or call to action 
-    .hero-unit
-      h1 Hello, world!
-      p
-        | This is my personal website. 
-        strong.below Below are the 3 services I use most often
-        |, so you can follow me on them. I like Apple, Google, iOS, HTML5, cooking, running, hiking, camping, skiing, boating, writing, reading, and art. I always like meeting new people so send me an email if you want to chat about any of the above.
-      p
-        a.btn.large.danger(href='mailto:miles.matthias@gmail.com') E-mail me »
-    //
-       Example row of columns 
+
+    .span9.offset1.columns
+      .carousel.slide#myCarousel
+        .carousel-inner
+          .item
+            img(src='images/bootstrap-mdo-sfmoma-01.jpg')
+            div.carousel-caption
+              h4 Thumbnail Label One
+              p This is the first random picture in this carousel in order to show what we're doing here!
+          .item
+            img(src='images/bootstrap-mdo-sfmoma-02.jpg')
+            div.carousel-caption
+              h4 Thumbnail Label Two
+              p This is the second random picture in this carousel in order to show what we're doing here!
+          .item
+            img(src='images/bootstrap-mdo-sfmoma-03.jpg')
+            div.carousel-caption
+              h4 Thumbnail Label Three
+              p This is the third random picture in this carousel in order to show what we're doing here!
+
     .row
-      .span-one-third
+      .span4.offset1
         h2 github
         p
           | I publish all of my personal work here. It's really convienant for me, but I also love social coding. Watch, fork, and pull request away!
         p
           a.btn(href='http://www.github.com/milesmatthias') Visit my github »
-      .span-one-third
+      .span4.offset2
         h2 twitter
         p
           | I like to tweet. It's one of the best ways to contact me. Tweet, tweet.
         p
           a.btn(href='http://www.twitter.com/miles_matthias') Visit my twitter »
-      .span-one-third
-        h2 tumblr
-        p
-          | I blog here. I write about startups, running, technology, and anything that interests me.
-        p
-          a.btn(href='http://milesmatthias.tumblr.com') Visit my tumblr »
-    //-footer
-      //-p © Company 2011
-  //
-     /container 
+
+    footer
+      p © Miles Matthias 2012
