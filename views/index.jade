@@ -18,20 +18,30 @@ section.container#home
       .carousel.slide#myCarousel
         .carousel-inner
           .item
-            img(src='images/bootstrap-mdo-sfmoma-01.jpg')
+            img(src='images/flatirons.jpg')
             div.carousel-caption
-              h4 Thumbnail Label One
-              p This is the first random picture in this carousel in order to show what we're doing here!
+              h4 I love Boulder, Colorado.
+              p I also love hiking. The Flatirons are a frequent hiking spot for me.
           .item
-            img(src='images/bootstrap-mdo-sfmoma-02.jpg')
+            img(src='images/fishing.jpeg')
             div.carousel-caption
-              h4 Thumbnail Label Two
-              p This is the second random picture in this carousel in order to show what we're doing here!
+              h4 Seafood is awesome.
+              p Lake Michigan has some good trout, and I got me one!
           .item
-            img(src='images/bootstrap-mdo-sfmoma-03.jpg')
+            img(src='images/bowling.jpeg')
             div.carousel-caption
-              h4 Thumbnail Label Three
-              p This is the third random picture in this carousel in order to show what we're doing here!
+              h4 I'm very curious.
+              p I found a pot of gold!
+          .item
+            img(src='images/beach.jpeg')
+            div.carousel-caption
+              h4 My family is important.
+              p Hanging out with my family on vacations or any time is a great time.
+          .item
+            img(src='images/jackrabbit.jpeg')
+            div.carousel-caption
+              h4 I'm sexy and I know it.
+              p I don't like South Dakota much, but they did have this jackrabbit. I work out!
         a.carousel-control.left(href="#myCarousel", data-slide="prev")
           &lsaquo;
         a.carousel-control.right(href="#myCarousel", data-slide="next")
@@ -59,16 +69,19 @@ section.container#home
     .span4.offset3
       h2 Follow Me
       .row
-        .span2
-          ul.socialnetworks
-            li
-              a#github(href="http://github.com/milesmatthias", data-original-title="My github profile") g
-            li
-              a#tumblr(href="http://milesmatthias.tumblr.com", data-original-title="My tumblr blog") t
-            li
-              a#twitter(href="http://twitter.com/miles_matthias", data-original-title="My twitter handle") t
-            li
-              a#email(href="#contact", data-original-title="Email me") e
+        ul.socialnetworks
+          li
+            a#github(href="http://github.com/milesmatthias", data-original-title="My github profile")
+              img.github(src='images/github.svg')
+          li
+            a#tumblr(href="http://milesmatthias.tumblr.com", data-original-title="My tumblr blog")
+              img.tumblr(src='images/rss.svg')
+          li
+            a#twitter(href="http://twitter.com/miles_matthias", data-original-title="My twitter handle")
+              img.twitter(src='images/twitter.svg')
+          li
+            a#email(href="#contact", data-original-title="Email me")
+              img.email(src='images/email.svg')
 
 
 section.container#contact
