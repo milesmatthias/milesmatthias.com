@@ -1,5 +1,4 @@
 body {
-  /*padding: 50px;*/
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -11,20 +10,20 @@ strong.below{
     color:#10B537;
 }
 
-/*div.wrapper{
-    background-color:white;
-}*/
-
 ul.socialnetworks{
 	list-style-type: none;
 	float:right;
+	padding-top:20px;
 }
 
 ul.socialnetworks li{
 	display: inline;
 	padding: 10px;
 	font-size: 2.5em;
-	color: yellow;
+}
+
+ul.socialnetworks li a{
+	text-decoration: none;
 }
 
 ul.socialnetworks li.twitter{
@@ -37,4 +36,18 @@ ul.socialnetworks li.github{
 
 ul.socialnetworks li.tumblr{
 	font-family: 'BookmanOldStyleBold', sans-serif;
+}
+
+div.container footer{
+	padding-top:40px;
+}
+
+section#home{
+	padding-top:30px;
+	padding-bottom:200px;
+}
+
+section#contact{
+	padding-top:50px;
+	padding-bottom:500px;
 }

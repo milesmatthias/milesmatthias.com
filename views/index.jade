@@ -1,18 +1,20 @@
-.wrapper
+section
   .navbar.navbar-fixed-top
     .navbar-inner
       .container
-        a.brand(href='#') Miles Matthias
+        a.brand(href='#home') Miles Matthias
         .nav-collapse
           ul.nav
-            li
-              a(href='#') Home
+            li.active
+              a(href='#home') Home
             li 
               a(href='#contact') Contact
 
-  .container
 
-    .span9.offset1.columns
+section.container#home
+
+  .row
+    .span8.offset2
       .carousel.slide#myCarousel
         .carousel-inner
           .item
@@ -30,20 +32,69 @@
             div.carousel-caption
               h4 Thumbnail Label Three
               p This is the third random picture in this carousel in order to show what we're doing here!
+        a.carousel-control.left(href="#myCarousel", data-slide="prev")
+          &lsaquo;
+        a.carousel-control.right(href="#myCarousel", data-slide="next")
+          &rsaquo;
 
-    .row
-      .span4.offset1
-        h2 github
-        p
-          | I publish all of my personal work here. It's really convienant for me, but I also love social coding. Watch, fork, and pull request away!
-        p
-          a.btn(href='http://www.github.com/milesmatthias') Visit my github »
-      .span4.offset2
-        h2 twitter
-        p
-          | I like to tweet. It's one of the best ways to contact me. Tweet, tweet.
-        p
-          a.btn(href='http://www.twitter.com/miles_matthias') Visit my twitter »
+  .row
 
-    footer
-      p © Miles Matthias 2012
+    .span4.offset1
+      h2 Welcome
+      p
+        | I’m an HTML5 developer working at 
+        a(href="http://www.inspiringapps.com") InspiringApps
+        |  in Boulder, Colorado. I love HTML5, mobile, and UI technologies, in addition to the exciting and hard working startup culture.
+      p
+        | Check out my projects on 
+        a(href="http://github.com/milesmatthias") github
+        |, read my 
+        a(href="http://milesmatthias.tumblr.com") blog
+        |, follow me on 
+        a(href="http://twitter.com/miles_matthias") twitter
+        |, and feel free to 
+        a(href="#contact") get in touch
+        |.
+
+    .span4.offset3
+      h2 Follow Me
+      .row
+        .span2
+          ul.socialnetworks
+            li
+              a#github(href="http://github.com/milesmatthias", data-original-title="My github profile") g
+            li
+              a#tumblr(href="http://milesmatthias.tumblr.com", data-original-title="My tumblr blog") t
+            li
+              a#twitter(href="http://twitter.com/miles_matthias", data-original-title="My twitter handle") t
+            li
+              a#email(href="#contact", data-original-title="Email me") e
+
+
+section.container#contact
+
+  .row
+    .span6.offset3
+      form.form-horizontal
+        fieldset.error
+          legend Contact Me
+          .control-group
+            .controls
+              input.input-xlarge#subjectInput(type='text', placeholder='Subject', data-content='I like talking about lots of things. But it’s always nice to know what we’re talking about in advance. Throw in the general theme of your e-mail here.', data-original-title='What are we talking about?')
+          .control-group
+            .controls
+              textarea.input-xlarge#bodyInput(placeholder='Body', rows='15', data-content='Write down your thoughts here, I’ll read them, and I’ll do my best to get back to you.', data-original-title='Talk to me!')
+          .form-actions
+            button.btn.btn-primary#submitBtn(type='submit') Save changes
+
+.container
+  footer
+    p © Miles Matthias 2012
+
+//- Le scripts
+script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
+script(src='/javascripts/bootstrap-carousel.js')
+script(src='/javascripts/bootstrap-scrollspy.js')
+script(src='/javascripts/bootstrap-tooltip.js')
+script(src='/javascripts/bootstrap-popover.js')
+script(src='/javascripts/app.js')
