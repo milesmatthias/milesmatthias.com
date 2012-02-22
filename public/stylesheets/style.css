@@ -22,22 +22,22 @@ ul.socialnetworks li{
 	float:left;
 }
 
-img.github{
+object.github{
 	width:24px;
 	height:24px;
 }
 
-img.tumblr{
+object.tumblr{
 	width:24px;
 	height:24px;
 }
 
-img.twitter{
+object.twitter{
 	width:24px;
 	height:24px;
 }
 
-img.email{
+object.email{
 	width:24px;
 	height:24px;
 }
