@@ -4,7 +4,10 @@
  */
 
 var express = require('express')
-  , routes = require('./routes')
+  , routes = require('./routes');
+
+//routes.index = require('./routes/index');
+//routes.blog = require('./routes/blog');
 
 var app = module.exports = express.createServer();
 
@@ -29,6 +32,7 @@ app.configure('production', function(){
 
 // Routes
 
+app.get('/blog', routes.blog);
 app.get('/', routes.index);
 
 var port = process.env.PORT || 3000;
