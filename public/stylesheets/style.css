@@ -48,15 +48,15 @@ div.item img{
 }
 
 div.container footer{
-	/*padding-top:40px;*/
+	padding-top:40px;
 }
 
 section#home{
-	/*padding-top:10px;
-	padding-bottom:200px;*/
+	padding-top:10px;
+	padding-bottom:200px;
 }
 
 section#contact{
-	/*padding-top:50px;
-	padding-bottom:500px;*/
+	padding-top:50px;
+	padding-bottom:500px;
 }
