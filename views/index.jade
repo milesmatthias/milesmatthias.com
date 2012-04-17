@@ -1,14 +1,17 @@
-section
-  .navbar.navbar-fixed-top
-    .navbar-inner
-      .container
-        a.brand(href='#home') Miles Matthias
-        .nav-collapse
-          ul.nav
-            li.active
-              a(href='#home') Home
-            li 
-              a(href='#contact') Contact
+.navbar.navbar-fixed-top
+  .navbar-inner
+    .container
+      a.btn.btn-navbar(data-toggle="collapse",data-target=".nav-collapse")
+        span.icon-bar
+        span.icon-bar
+        span.icon-bar
+      a.brand(href='#home') Miles Matthias
+      .nav-collapse
+        ul.nav
+          li.active
+            a(href='#home') Home
+          li 
+            a(href='#contact') Contact
 
 
 section.container#home
@@ -108,6 +111,7 @@ section.container#contact
 //- Le scripts
 script(src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js')
 script(src='/javascripts/bootstrap-carousel.js')
+script(src='/javascripts/bootstrap-collapse.js')
 script(src='/javascripts/bootstrap-scrollspy.js')
 script(src='/javascripts/bootstrap-tooltip.js')
 script(src='/javascripts/bootstrap-popover.js')
