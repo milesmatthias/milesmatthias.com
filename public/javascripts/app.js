@@ -19,7 +19,6 @@ $(function(){
 	$('a#twitter').tooltip(tooltipOptions);
 	$('a#email').tooltip(tooltipOptions);
 
-
 	$('#submitBtn').click(function(e){
 		var subject = $('#subjectInput').val();
 		var body = $('#bodyInput').val();

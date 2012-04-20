@@ -73,19 +73,18 @@ section.container#home
       h2 Follow Me
       .row
         ul.socialnetworks
+          li#github
+            a#github(href="http://github.com/milesmatthias", data-original-title="My github profile", target="_blank")
+              img.github(src='images/github.svg', type="image/svg+xml")
           li
-            a#github(href="http://github.com/milesmatthias", data-original-title="My github profile")
-              //-img.github(src=)
-              object.github(data='images/github.svg', type="image/svg+xml")
+            a#tumblr(href="http://milesmatthias.com", data-original-title="My blog", target="_blank")
+              img.tumblr(src='images/rss.svg', type="image/svg+xml")
           li
-            a#tumblr(href="http://milesmatthias.tumblr.com", data-original-title="My tumblr blog")
-              object.tumblr(data='images/rss.svg', type="image/svg+xml")
-          li
-            a#twitter(href="http://twitter.com/miles_matthias", data-original-title="My twitter handle")
-              object.twitter(data='images/twitter.svg', type="image/svg+xml")
+            a#twitter(href="http://twitter.com/miles_matthias", data-original-title="My twitter handle", target="_blank")
+              img.twitter(src='images/twitter.svg', type="image/svg+xml")
           li
             a#email(href="#contact", data-original-title="Email me")
-              object.email(data='images/email.svg', type="image/svg+xml")
+              img.email(src='images/email.svg', type="image/svg+xml")
 
 
 section.container#contact
