@@ -1,0 +1,26 @@
+#title: {
+    font-weight: bold;
+    text-align: center;
+    left: 4em;
+    top: 1em;
+}
+
+#navBar: {
+    left: 1.5em;
+}
+
+#profilePicture: {
+    top: 0em;
+    width: 96;
+    height: 96;
+}
+
+.navLink: {
+    font-size: 14px;
+    left: 0.5em;
+    text-decoration: none;
+}
+
+.blogPost: {
+    
+}
